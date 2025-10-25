@@ -1,0 +1,112 @@
+/* Modern Package Cards Design */
+.packages-section {
+  background: #13001f;
+  padding: 3rem 0;
+}
+
+.package-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(147, 51, 234, 0.5);
+  box-shadow: 0 10px 30px rgba(147, 51, 234, 0.2);
+}
+
+.package-content {
+  text-align: center;
+}
+
+.package-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.package-name {
+  color: white;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.package-price {
+  color: #a78bfa;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-quantity {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-quantity:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.quantity {
+  color: white;
+  font-size: 1.2rem;
+  min-width: 40px;
+  text-align: center;
+}
+
+.btn-order {
+  background: linear-gradient(135deg, #9333ea, #7c3aed);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.btn-order:hover {
+  background: linear-gradient(135deg, #a855f7, #8b5cf6);
+  transform: scale(1.02);
+}
+
+/* Featured Package */
+.package-card.featured {
+  border-color: #9333ea;
+  background: linear-gradient(135deg, rgba(147, 51, 234, 0.1), rgba(139, 92, 246, 0.1));
+}
+
+.package-card.featured .package-badge {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}

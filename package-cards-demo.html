@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THARU STORE - Gaming Top Up</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/packages.css" />
+</head>
+<body>
+    <!-- Packages Section -->
+    <section class="packages-section">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title text-white">Available Products</h2>
+                <p class="section-subtitle text-purple-300">Choose your preferred products from the options below</p>
+            </div>
+
+            <!-- Package Cards Grid -->
+            <div class="row g-4 justify-content-center">
+                <!-- Package Card 1: Weekly Lite -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="package-card" data-package="Weekly Lite" data-price="100.00">
+                        <div class="package-content">
+                            <div class="package-badge">WL</div>
+                            <h3 class="package-name">Weekly Lite</h3>
+                            <p class="package-price">LKR 100.00</p>
+                            <div class="quantity-controls">
+                                <button class="btn-quantity minus">-</button>
+                                <span class="quantity">0</span>
+                                <button class="btn-quantity plus">+</button>
+                            </div>
+                            <button class="btn-order">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package Card 2: Weekly -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="package-card" data-package="Weekly" data-price="490.00">
+                        <div class="package-content">
+                            <div class="package-badge">W</div>
+                            <h3 class="package-name">Weekly</h3>
+                            <p class="package-price">LKR 490.00</p>
+                            <div class="quantity-controls">
+                                <button class="btn-quantity minus">-</button>
+                                <span class="quantity">0</span>
+                                <button class="btn-quantity plus">+</button>
+                            </div>
+                            <button class="btn-order">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package Card 3: Monthly -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="package-card featured" data-package="Monthly" data-price="2450.00">
+                        <div class="package-content">
+                            <div class="package-badge">M</div>
+                            <h3 class="package-name">Monthly</h3>
+                            <p class="package-price">LKR 2,450.00</p>
+                            <div class="quantity-controls">
+                                <button class="btn-quantity minus">-</button>
+                                <span class="quantity">0</span>
+                                <button class="btn-quantity plus">+</button>
+                            </div>
+                            <button class="btn-order">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Controls -->
+                <div class="col-12 mt-5 text-center">
+                    <div class="d-flex justify-content-center gap-3">
+                        <button class="btn-nav" id="prevPage">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </button>
+                        <div class="page-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                        <button class="btn-nav" id="nextPage">
+                            Pay Now <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and Custom Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/package-controls.js"></script>
+</body>
+</html>
